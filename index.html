@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ben Wespi – CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="profpic.jpg" alt="Profilfoto Ben Wespi" class="avatar">
+    <h1>Hi<span class="bang">!</span><span class="cursor"></span></h1>
+    <p>I am Ben – IT-Systemadministrator and System Engineer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About me</h2>
+      <p>IT human focused on system administration and cloud engineering. <br> Off the clock, you'll often find me chasing extreme sports or recharging in the great outdoors.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <label for="categoryFilter">Categorie:</label>
+      <select id="categoryFilter" onchange="filterSkills()">
+        <option value="Alle">All</option>
+      </select>
+      <div id="skillsContainer" class="skills-grid"></div>
+    </section>
+
+    <section>
+      <h2>Career</h2>
+      <ul>
+        <li><strong>02/2025 – today:</strong> IT Systemadministrator, BMC Switzerland AG</li>
+        <li><strong>10/2023 – 01/2025:</strong> IT System Engineer, BMC Switzerland AG</li>
+        <li><strong>08/2022 – 09/2023:</strong> ICT Supporter, BMC Switzerland AG</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>04/2024 – today:</strong> Advanced Federal Diploma of Higher Education in Information Technology, HFTM</li>
+        <li><strong>08/2018 – 07/2022:</strong> Trained System Engineer with Federal certificate of Competence</li>
+      </ul>
+    </section>
+
+    <section id="hobbies" class="hobbies-section">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li><strong>Extreme Sports:</strong> Mountain biking (Enduro, Downhill & Freeride), Skiing (Freeride, Ski touring & Piste)</li>
+            <li><strong>Sports:</strong> Road cycling, Gym</li>
+            <li><strong>Technology:</strong> Cloud engineering, Hardware engineering</li>
+            <li><strong>Other:</strong> Photography, Hiking, General love for nature 🌳 ⛰️</li>
+        </ul>
+        </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ben Wespi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

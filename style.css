@@ -1,0 +1,148 @@
+:root {
+  --white-smoke: #f3f5f4;
+  --timberwolf: #d9d8d6;
+  --taupe-gray: #a09e9f;
+  --dim-gray: #6f706b;
+  --jet: #33322d;
+  --eerie-black: #212121;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--white-smoke);
+  color: var(--eerie-black);
+  line-height: 1.5;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--taupe-gray);
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(50px, 12vw, 150px);
+  margin: 0;
+}
+
+.bang {
+  color: var(--eerie-black);
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.85em;
+  background: var(--taupe-gray);
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+main, footer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid var(--timberwolf);
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid var(--taupe-gray);
+  border-radius: 4px;
+  background: white;
+  color: var(--eerie-black);
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.skill-item {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--timberwolf);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.skill-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.skill-bar-bg {
+  width: 100%;
+  height: 14px;
+  background-color: var(--timberwolf);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  width: 0;
+  background: var(--jet);
+  border-radius: 7px;
+  transition: width 1s ease-out;
+}
+
+.hobbies-section {
+  background: var(--white-smoke);
+  margin-top: 30px;
+}
+
+.hobbies-section h2 {
+  margin-top: 0;
+  color: var(--eerie-black);
+}
+
+.hobbies-section p {
+  color: var(--dim-gray);
+  line-height: 1.6;
+}
+
+.hobbies-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.hobbies-section li {
+  margin-bottom: 6px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--dim-gray);
+  margin-top: 40px;
+}
