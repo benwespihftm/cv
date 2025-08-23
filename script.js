@@ -68,3 +68,26 @@ document.addEventListener("DOMContentLoaded", () => {
     obs.observe(sec);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      alert("Thanks for your message! I'll get back to you soon.");
+      form.reset();
+    } else {
+      alert("Oops! Something went wrong.");
+    }
+  });
+});
+
